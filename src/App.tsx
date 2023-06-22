@@ -13,7 +13,7 @@ function App() {
 
   const updateNotes = async() => {
     const notes = await Fetching.getNotes();
-    setNotes(notes)
+    notes && setNotes(notes)
   };
 
   const addNote = async() => {
